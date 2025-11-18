@@ -6,16 +6,16 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "关于我";
 
 const identity = {
-  firstName: "莎拉",
-  country: "加拿大",
+  firstName: "郭恩然",
+  country: "中国",
   occupation: "技术撰稿人",
-  hobbies: ["摄影", "观鸟", "棒球"],
+  hobbies: ["1", "2", "3"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "Vue", "Astro", "Writing Docs"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "crimson";
@@ -55,10 +55,6 @@ const skillColor = "crimson";
         {identity.hobbies.length >= 2 &&
             <li>我的两个习惯：{identity.hobbies[0]}和{identity.hobbies[1]}</li>
         }
-        </ul>
-        <p>我的技能是：</p>
-        <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
         </ul>
 
         {happy && <p>我非常乐意学习 Astro！</p>}

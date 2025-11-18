@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { storyblok } from '@storyblok/astro';
 
 import preact from "@astrojs/preact";
 
